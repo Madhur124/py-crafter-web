@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* light palette (existing pages) */
+  --color-mint: #E8F4EA;
+  --color-sky: #E3EEF5;
+  --color-peach: #FDF0E9;
+  --color-lavender: #F0EDF5;
+  --color-cream: #FFFBF5;
+  --color-ink: #2D2A26;
+  --color-ink-light: #6B6560;
+  --color-sage: #B8D4C8;
+  --color-coral: #F5C6B8;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* dark landing palette */
+  --color-ink-deep: #0B0F14;
+  --color-ink-deep-2: #0F141B;
+  --color-ink-deep-3: #141A22;
+  --color-line: #1F2731;
+  --color-fg: #E8ECEF;
+  --color-fg-muted: #8A94A2;
+  --color-cyan-glow: #7DD3FC;
+  --color-mint-glow: #86EFAC;
+  --color-violet-glow: #C4B5FD;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* warm accents for human feel */
+  --color-amber-glow: #FCD9A8;
+  --color-rose-glow: #F5B7B1;
+  --color-sand: #E8D5B7;
 }
